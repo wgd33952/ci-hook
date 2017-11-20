@@ -1,0 +1,21 @@
+{
+    "name": "junec/ci-hook",
+    "description": "This is a CodeIgniter hook.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "June",
+            "email": "junechan08@yeah.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+        "psr-4": {
+            "Junec\\Hook\\": "src/Junec/hook"
+        }
+    }
+}
