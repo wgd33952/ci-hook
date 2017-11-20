@@ -10,7 +10,7 @@ class Hook {
 	{
 		$hookName = ucfirst($hookName);
 		// 根据插件名字导入插件
-		$hook_path = FCPATH . 'plugin/' . $hookName . '/' . $hookName . '.php';
+		$hook_path = APPPATH . '/plugin/' . $hookName . '/' . $hookName . '.php';
 		if (is_file($hook_path)) {
 			include_once $hook_path;
 			$hook = new $hookName;
