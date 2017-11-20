@@ -13,7 +13,7 @@ class Hook {
 		if (is_file($hook_path)) {
 			include_once $hook_path;
 			$hook = new $hookName;
-			self::hooks[$hookName] = $hook;
+			self::$hooks[$hookName] = $hook;
 		}
 	}
 	
