@@ -27,7 +27,7 @@ class Hook {
 	static public function listen($hookName, $funcName, $params = null)
 	{
 		if (isset(self::$hooks[$hookName])) {
-			self:;exec($hookName, $funcName, $params);
+			self::exec($hookName, $funcName, $params);
 		} else {
 			return false;
 		}
