@@ -8,6 +8,7 @@ class Hook {
 	
 	static public function add($hookName, $funcName)
 	{
+		$hookName = ucfirst($hookName);
 		// 根据插件名字导入插件
 		$hook_path = FCPATH . 'plugin/' . $hookName . '/' . $hookName . '.php';
 		if (is_file($hook_path)) {
@@ -26,6 +27,7 @@ class Hook {
 	 */
 	static public function listen($hookName, $funcName, $params = null)
 	{
+		$hookName = ucfirst($hookName);
 		if (isset(self::$hooks[$hookName])) {
 			self::exec($hookName, $funcName, $params);
 		} else {
@@ -42,6 +44,7 @@ class Hook {
 	 */
 	static public function exec($hookName, $funcName, $params = null)
 	{
+		$hookName = ucfirst($hookName);
 		$addon = new $hookName();
 		return $addon->$funcName($params);
 	}
