@@ -1,5 +1,5 @@
 {
-    "name": "junec/ci-hook",
+    "name": "junec/cihook",
     "description": "This is a CodeIgniter hook.",
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,7 @@
 	},
 	"autoload": {
         "psr-4": {
-            "Junec\\Hook\\": "src/Junec/hook"
+            "Junec\\Cihook\\": "src"
         }
     }
 }

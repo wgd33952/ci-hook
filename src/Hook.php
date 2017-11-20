@@ -1,5 +1,5 @@
 <?php
-namespace Junec\Hook;
+namespace Junec\Cihook;
 
 class Hook {
 	
